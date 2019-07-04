@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/','home\IndexController');                        //首页
+Route::get('home/shop','home\IndexController@shop');                //商品
+Route::get('home/shopdetail','home\IndexController@shopdetail');    //商品详情
