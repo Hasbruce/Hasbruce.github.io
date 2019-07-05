@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk">
+<title>IE常见bugs以及解决方案列表</title>
+<meta name="keywords" content="" />
+<meta name="description" content="IE常见bugs以及解决方案列表" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base.css" tppabs="http://showtime.yangqq.com/skin/show/css/base.css" rel="stylesheet">
+<link href="index.css" tppabs="http://showtime.yangqq.com/skin/show/css/index.css" rel="stylesheet">
+<link href="info.css" tppabs="http://showtime.yangqq.com/skin/show/css/info.css" rel="stylesheet">
+<link href="m.css" tppabs="http://showtime.yangqq.com/skin/show/css/m.css" rel="stylesheet">
+<script src="jquery.min.js" tppabs="http://showtime.yangqq.com/skin/show/js/jquery.min.js" ></script>
+<script src="jquery.easyfader.min.js" tppabs="http://showtime.yangqq.com/skin/show/js/jquery.easyfader.min.js"></script>
+<script src="hc-sticky.js" tppabs="http://showtime.yangqq.com/skin/show/js/hc-sticky.js"></script>
+<script src="comm.js" tppabs="http://showtime.yangqq.com/skin/show/js/comm.js"></script>
+<script src="scrollReveal.js" tppabs="http://showtime.yangqq.com/skin/show/js/scrollReveal.js"></script>
+<!--[if lt IE 9]>
+<script src="modernizr.js" tppabs="http://showtime.yangqq.com/skin/show/js/modernizr.js"></script>
+<![endif]-->
+<script type="text/javascript" src="ajax.js" tppabs="http://showtime.yangqq.com/e/data/js/ajax.js"></script>
+</head>
+<body>
+<header class="header-navigation" id="header">
+  <nav>
+    <div class="logo"><a href="index.htm" tppabs="http://showtime.yangqq.com/">杨青个人博客</a></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+ <ul id="starlist">
+<li><a href="index.htm" tppabs="http://showtime.yangqq.com/">首页</a></li>
+ 
+ 
+<li ><a href="index-1.htm" tppabs="http://showtime.yangqq.com/about/">关于我</a></li> 
+ 
+ 
+<li ><a href="index-2.htm" tppabs="http://showtime.yangqq.com/photo/">图片集锦</a></li> 
+ 
+ 
+<li ><a href="index-3.htm" tppabs="http://showtime.yangqq.com/life/">慢生活</a></li> 
+ 
+ 
+<li class="selected"><a href="index-4.htm" tppabs="http://showtime.yangqq.com/study/">学无止境</a></li> 
+ 
+ 
+<li ><a href="index-5.htm" tppabs="http://showtime.yangqq.com/time/">时间轴</a></li> 
+ 
+ 
+<li ><a href="-bid=1.htm" tppabs="http://showtime.yangqq.com/e/tool/gbook/?bid=1">留言</a></li> 
+ 
+    </ul>
+    <div class="searchbox">
+    <div id="search_bar" class="search_bar">
+      <form  id="searchform" action="http://showtime.yangqq.com/e/search/index.php" method="post" name="searchform">
+        <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
+        <input type="hidden" name="show" value="title" />
+        <input type="hidden" name="tempid" value="1" />
+        <input type="hidden" name="tbname" value="news">
+        <input type="hidden" name="Submit" value="搜索" />
+        <p class="search_ico"> <span></span></p>
+      </form>
+     </div> 
+    </div>
+  </nav>
+</header>
+<article>
+  <main>
+  <div class="infosbox">
+    <div class="newsview">
+      <h3 class="news_title">IE常见bugs以及解决方案列表</h3>
+      <div class="bloginfo">
+        <ul>
+          <li class="author">
+作者：杨青</li>
+          <li class="lmname">学习笔记</li>
+          <li class="timer">2014-05-14</li>
+          <li class="view"><script src=%22-classid=14&id=31&addclick=1.js%22 tppabs="http://showtime.yangqq.com/e/public/ViewClick/?classid=14&id=31&addclick=1"></script>人已阅读</li>
+        </ul>
+      </div>
+      <div class="tags"></div>
+      <div class="news_about"><strong>简介</strong>1、如何解决IE6及更早浏览器浮动时产生双倍边距的BUG？2、如何解决IE6及更早浏览器下的3像素BUG？3、如何在IE6及更早浏览器下模拟min-height效果？4、如何解决IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？</div>
+      <div class="news_con">         <p><strong>1、如何解决IE6及更早浏览器浮动时产生双倍边距的BUG？</strong></p><p class="shili">#test{display:inline;}</p><p><strong>2、如何解决IE6及更早浏览器下的3像素BUG？</strong></p><div class="shili"><p>&nbsp;.a{color:#f00;}</p><p>&nbsp; .main{width:950px;background:#eee;}</p><p>&nbsp; .content{float:left;width:750px;height:100px;background:#ccc;_margin-right:-3px;}</p><p>&nbsp; .aside{height:100px;background:#aaa;}</p><p>&nbsp; &lt;div class=&quot;main&quot;&gt;</p><p>&nbsp; &nbsp; &lt;div class=&quot;content&quot;&gt;content&lt;/div&gt;</p><p>&nbsp; &nbsp; &lt;div class=&quot;aside&quot;&gt;aside&lt;/div&gt;</p><p>&nbsp; &lt;/div&gt;</p></div><p><span style="color: rgb(255, 0, 0);"><span style="font-size: 12px;">在IE6及更早浏览器下为.content设置margin-right:-3px；也可以设置.aside为浮动</span></span></p><p><strong>3、如何在IE6及更早浏览器下模拟min-height效果？</strong></p><div class="shili"><p>#test{min-height:100px;_height:100px;}</p></div><p><span style="color: rgb(255, 0, 0);"><span style="font-size: 12px;">注意此时#test不能再设置overflow的值为hidden，否则模拟min-height效果将失效</span></span></p><p><strong>4、如何解决IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？</strong></p><p class="shili">li{vertical-align:top;}</p><p><strong>5、如何解决IE6使用滤镜PNG图片透明后，容器内链接失效的问题？</strong></p><div class="shili"><p>div{width:300px;height:100px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;*.png&#39;);}</p><p>a{_position:relative;}</p></div><p><span style="color: rgb(255, 0, 0);"><span style="font-size: 12px;">解决方法是为容器内的链接定义相对定位属性position的值为relative</span></span></p><p><strong>6、IE6设置了margin:auto ,容器无法居中？</strong></p><p>方法一：定义宽度</p><p>方法二：检查DTD声明是否完整</p><p><strong>7、如何设置IE下的iframe背景透明？</strong></p><p>设置iframe元素的标签属性allowtransparency=&quot;allowtransparency&quot;然后设置iframe内部页面的body背景色为transparent。 不过由此会引发IE下一些其它问题，如：设置透明后的iframe将不能遮住select</p><p><strong>8、IE6 position:fixed 固定定位问题</strong></p><p>详细解决方案，<a href="javascript:if(confirm(%27http://showtime.yangqq.com/jstt/bj/2013-06-09/186.html  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://showtime.yangqq.com/jstt/bj/2013-06-09/186.html%27" tppabs="http://showtime.yangqq.com/jstt/bj/2013-06-09/186.html" target="_blank">请点击此链接 》》》&nbsp;</a></p><p><strong>9、让IE6支持max-width, max-height属性</strong></p><p>例如：如果你有一个或多个图像，显示图像的高度和宽度应该有一些限制。即图像不应该有宽度超过500px（假设），高度不超过200px，那么图像的CSS应为如下：</p><div class="shili"><p>img{&nbsp;</p><p>max-height:200px;max-width:500px;&nbsp;</p><p>width:expression(document.body.clientWidth &gt; 500? &quot;500px&quot;: &quot;auto&quot; ); &nbsp;/*for ie6*/&nbsp;</p><p>height:expression(document.body.clientHeight &gt; 200? &quot;200px&quot;: &quot;auto&quot; ); &nbsp;/*for ie6*/</p><p>&nbsp;}</p></div><p><strong>10、img图片在IE6下显示空白的Bug解决方案</strong></p><p>详细解决方案，<a href="javascript:if(confirm(%27http://showtime.yangqq.com/jstt/bj/2013-06-06/95.html  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://showtime.yangqq.com/jstt/bj/2013-06-06/95.html%27" tppabs="http://showtime.yangqq.com/jstt/bj/2013-06-06/95.html" target="_blank">请点击此链接 》》》&nbsp;</a></p>       </div>
+    </div>
+    <div class="share">
+<p class="diggit"><a href="JavaScript:makeRequest('/e/public/digg/?classid=14&id=31&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"> 很赞哦！ </a>(<b id="diggnum"><script type="text/javascript" src="-classid=14&id=31&down=5.js" tppabs="http://showtime.yangqq.com/e/public/ViewClick/?classid=14&id=31&down=5"></script></b>)</p>
+
+</div>
+    <div class="nextinfo">
+      <p>上一篇：<a href="30.html" tppabs="http://showtime.yangqq.com/study/biji/30.html">css技巧以及经验总结</a></p>
+      <p>下一篇：<a href="32.html" tppabs="http://showtime.yangqq.com/study/biji/32.html">鼠标悬停图片、文字css3效果</a></p>
+    </div>
+    <div class="news_pl">
+      <h2>文章评论</h2>
+    <div class="gbko">
+        <script src="-classid=14&id=31&num=20.js" tppabs="http://showtime.yangqq.com/e/pl/more/?classid=14&id=31&num=20"></script>
+         <script>
+		  function CheckPl(obj)
+		  {
+		  if(obj.saytext.value=="")
+		  {
+		  alert("您没什么话要说吗？");
+		  obj.saytext.focus();
+		  return false;
+		  }
+		  return true;
+		  }
+		  </script><form action="http://showtime.yangqq.com/e/pl/doaction.php" method="post" name="saypl" id="saypl" onsubmit="return CheckPl(document.saypl)">
+<div id="plpost">
+<p class="saying"><span><a href="javascript:if(confirm(%27http://showtime.yangqq.com/e/pl/?classid=14&id=31  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://showtime.yangqq.com/e/pl/?classid=14&id=31%27" tppabs="http://showtime.yangqq.com/e/pl/?classid=14&id=31">共有<script type="text/javascript" src="-classid=14&id=31&down=2.js" tppabs="http://showtime.yangqq.com/e/public/ViewClick/?classid=14&id=31&down=2"></script>条评论</a></span>来说两句吧...</p>
+<p class="yname"><span>用户名:</span><input name="username" type="text" class="inputText" id="username" value="" size="16" /></p>
+<p class="yzm"><span>验证码:</span><input name="key" type="text" class="inputText" size="16" />
+<img src="-v=pl.jpg" tppabs="http://showtime.yangqq.com/e/ShowKey/?v=pl" align="absmiddle" name="plKeyImg" id="plKeyImg" onclick="plKeyImg.src='/e/ShowKey/?v=pl&t='+Math.random()" title="看不清楚,点击刷新" /> </p>
+<input name="nomember"  type="hidden" id="nomember" value="1" checked="checked" />
+<textarea name="saytext" rows="6" id="saytext"></textarea><input name="imageField" type="submit" value="提交"/>
+<input name="id" type="hidden" id="id" value="31" />
+<input name="classid" type="hidden" id="classid" value="14" />
+<input name="enews" type="hidden" id="enews" value="AddPl" />
+<input name="repid" type="hidden" id="repid" value="0" />
+<input type="hidden" name="ecmsfrom" value="/study/biji/31.html"></td>
+</div></form>
+    </div>
+    </div>
+  </div>
+  </main>
+  <aside id="stickMe">
+    <div class="r_box" >     
+      <div class="tuijian">
+        <h2 id="tab"><a href="#"class="current">点击排行</a><a href="#">站长推荐</a></h2>       
+     <div id="content">
+        <ul style="display:block;">
+          <li><a href="32.html" tppabs="http://showtime.yangqq.com/study/biji/32.html" target="_blank">鼠标悬停图片、文字css3效果 </a></li>
+          <li><a href="34.html" tppabs="http://showtime.yangqq.com/study/biji/34.html" target="_blank">我们可以从CSS框架中借鉴到什么 </a></li>
+          <li><a href="26.html" tppabs="http://showtime.yangqq.com/study/biji/26.html" target="_blank">分享我的个人博客访问量如何做到IP从10到2000... </a></li>
+          <li><a href="29.html" tppabs="http://showtime.yangqq.com/study/biji/29.html" target="_blank">IE6到底哪里不好？你还继续用IE6吗？ </a></li>
+          <li><a href="23.html" tppabs="http://showtime.yangqq.com/study/biji/23.html" target="_blank">【心路历程】请不要在设计这条路上徘徊啦 </a></li>
+          <li><a href="27.html" tppabs="http://showtime.yangqq.com/study/biji/27.html" target="_blank">帝国cms常用标签调用方法总结（不得不收藏哦）... </a></li>
+          <li><a href="25.html" tppabs="http://showtime.yangqq.com/study/biji/25.html" target="_blank">【匆匆那些年】总结个人博客经历的这四年… </a></li>
+          <li><a href="30.html" tppabs="http://showtime.yangqq.com/study/biji/30.html" target="_blank">css技巧以及经验总结 </a></li>
+          <li><a href="33.html" tppabs="http://showtime.yangqq.com/study/biji/33.html" target="_blank">从摄影作品中获取网页颜色搭配技巧 </a></li>
+          <li><a href="31.html" tppabs="http://showtime.yangqq.com/study/biji/31.html" target="_blank">IE常见bugs以及解决方案列表 </a></li>
+          <li><a href="28.html" tppabs="http://showtime.yangqq.com/study/biji/28.html" target="_blank">使用ASPCMS建站网站被黑 </a></li>
+          <li><a href="24.html" tppabs="http://showtime.yangqq.com/study/biji/24.html" target="_blank">【郑重申明】本站只提供静态模板下载！ </a></li>
+        </ul>             
+        <ul>
+          <li><a href="23.html" tppabs="http://showtime.yangqq.com/study/biji/23.html" target="_blank">【心路历程】请不要在设计这条路上徘徊啦 </a></li>
+          <li><a href="25.html" tppabs="http://showtime.yangqq.com/study/biji/25.html" target="_blank">【匆匆那些年】总结个人博客经历的这四年… </a></li>
+          <li><a href="26.html" tppabs="http://showtime.yangqq.com/study/biji/26.html" target="_blank">分享我的个人博客访问量如何做到IP从10到2000... </a></li>
+          <li><a href="27.html" tppabs="http://showtime.yangqq.com/study/biji/27.html" target="_blank">帝国cms常用标签调用方法总结（不得不收藏哦）... </a></li>
+          <li><a href="28.html" tppabs="http://showtime.yangqq.com/study/biji/28.html" target="_blank">使用ASPCMS建站网站被黑 </a></li>
+          <li><a href="29.html" tppabs="http://showtime.yangqq.com/study/biji/29.html" target="_blank">IE6到底哪里不好？你还继续用IE6吗？ </a></li>
+          <li><a href="30.html" tppabs="http://showtime.yangqq.com/study/biji/30.html" target="_blank">css技巧以及经验总结 </a></li>
+          <li><a href="31.html" tppabs="http://showtime.yangqq.com/study/biji/31.html" target="_blank">IE常见bugs以及解决方案列表 </a></li>
+          <li><a href="32.html" tppabs="http://showtime.yangqq.com/study/biji/32.html" target="_blank">鼠标悬停图片、文字css3效果 </a></li>
+          <li><a href="33.html" tppabs="http://showtime.yangqq.com/study/biji/33.html" target="_blank">从摄影作品中获取网页颜色搭配技巧 </a></li>
+        </ul>
+       </div>
+      </div>
+ <div class="wdxc">
+        <h2>图文精选</h2>
+        <ul>
+                     <li><a href="25.html" tppabs="http://showtime.yangqq.com/study/biji/25.html" title="【匆匆那些年】总结个人博客经历的这四年…" target="_blank"><img src="a465dddcbbcce5f7d73e1ea7fdc48b11-1.jpg" tppabs="http://showtime.yangqq.com/showtime/d/file/p/2018/08-04/a465dddcbbcce5f7d73e1ea7fdc48b11.jpg"></a></li>
+                     <li><a href="27.html" tppabs="http://showtime.yangqq.com/study/biji/27.html" title="帝国cms常用标签调用方法总结（不得不收藏哦）" target="_blank"><img src="a0b65d3d8160f90f6556c4dfa3a85a59-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg"></a></li>
+                     <li><a href="28.html" tppabs="http://showtime.yangqq.com/study/biji/28.html" title="使用ASPCMS建站网站被黑" target="_blank"><img src="2ab0bdcc2d40794f183031053dd1a4d2-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-06-17/2ab0bdcc2d40794f183031053dd1a4d2.jpg"></a></li>
+                     <li><a href="29.html" tppabs="http://showtime.yangqq.com/study/biji/29.html" title="IE6到底哪里不好？你还继续用IE6吗？" target="_blank"><img src="b1d8cde248671b1e75ef302609595b1f-1.jpg" tppabs="http://www.yangqq.com/d/file/jstt/bj/2014-05-26/b1d8cde248671b1e75ef302609595b1f.jpg"></a></li>
+                     <li><a href="31.html" tppabs="http://showtime.yangqq.com/study/biji/31.html" title="IE常见bugs以及解决方案列表" target="_blank"><img src="1ed9f310ffdbfdbb4c695671233296b5-1.jpg" tppabs="http://www.yangqq.com/d/file/jstt/bj/2014-05-14/1ed9f310ffdbfdbb4c695671233296b5.jpg"></a></li>
+                     <li><a href="32.html" tppabs="http://showtime.yangqq.com/study/biji/32.html" title="鼠标悬停图片、文字css3效果" target="_blank"><img src="12f33cc4c1c692e2fa0017275fcc265f-1.jpg" tppabs="http://www.yangqq.com/d/file/jstt/bj/2014-01-14/12f33cc4c1c692e2fa0017275fcc265f.jpg"></a></li>
+                   </ul>
+      </div>
+<div class="cloud">
+      <h2>标签云</h2>
+      <ul>
+ <a href="-tagname=个人博客模板&tempid=11.htm" tppabs="http://showtime.yangqq.com/e/tags/?tagname=%B8%F6%C8%CB%B2%A9%BF%CD%C4%A3%B0%E5&tempid=11" target="_blank">个人博客模板</a>      </ul>
+    </div>
+      <div class="guanzhu">
+        <h2>关注我 么么哒</h2>
+        <ul>
+          <img src="wx.jpg" tppabs="http://showtime.yangqq.com/skin/show/images/wx.jpg">
+        </ul>
+      </div>
+    </div>
+  </aside>
+</article>
+<footer>
+  <p>Design by <a href="index.htm" tppabs="http://showtime.yangqq.com/" target="_blank">杨青个人博客</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a><script src="-enews=donews&classid=14&id=31.js" tppabs="http://showtime.yangqq.com/e/public/onclick/?enews=donews&classid=14&id=31"></script></body>
+</html>

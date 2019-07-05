@@ -15,7 +15,8 @@ class IndexController extends Controller
     public function index()
     {
         //
-        return view('home.index');
+        $name="故乡";
+        return view('home.index',compact('name'));
     }
 
     /**
@@ -84,15 +85,45 @@ class IndexController extends Controller
         //
     }
 
-    //商品
-    public function shop()
+    //个人信息
+    public function perInfo()
     {
-        return view('home.shop');
+        $name="故乡";
+        return view('home.perInfo',compact('name'));
     }
 
-    //商品详情
-    public function shopdetail()
+    //写博客
+    public function writeBlog()
     {
-        return view('home.shopdetail');
+        $name="故乡";
+        return view('home.writeBlog',compact('name'));
+    }
+
+    //模板分享
+    public function share()
+    {
+        $name="故乡";
+        return view('home.share',compact('name'));
+    }
+
+    //博客日记
+    public function list()
+    {
+        $name="故乡";
+        return view('home.list',compact('name'));
+    }
+
+    //学无止境
+    public function fengmain()
+    {
+        $name="故乡";
+        return view('home.fengmain',compact('name'));
+    }
+
+    //时间轴
+    public function time()
+    {
+        $name="故乡";
+        return view('home.time',compact('name'));
     }
 }

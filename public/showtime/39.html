@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk">
+<title>帝国cms 如何使用静态页面？</title>
+<meta name="keywords" content="" />
+<meta name="description" content="帝国cms 如何使用静态页面？" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base.css" tppabs="http://showtime.yangqq.com/skin/show/css/base.css" rel="stylesheet">
+<link href="index.css" tppabs="http://showtime.yangqq.com/skin/show/css/index.css" rel="stylesheet">
+<link href="info.css" tppabs="http://showtime.yangqq.com/skin/show/css/info.css" rel="stylesheet">
+<link href="m.css" tppabs="http://showtime.yangqq.com/skin/show/css/m.css" rel="stylesheet">
+<script src="jquery.min.js" tppabs="http://showtime.yangqq.com/skin/show/js/jquery.min.js" ></script>
+<script src="jquery.easyfader.min.js" tppabs="http://showtime.yangqq.com/skin/show/js/jquery.easyfader.min.js"></script>
+<script src="hc-sticky.js" tppabs="http://showtime.yangqq.com/skin/show/js/hc-sticky.js"></script>
+<script src="comm.js" tppabs="http://showtime.yangqq.com/skin/show/js/comm.js"></script>
+<script src="scrollReveal.js" tppabs="http://showtime.yangqq.com/skin/show/js/scrollReveal.js"></script>
+<!--[if lt IE 9]>
+<script src="modernizr.js" tppabs="http://showtime.yangqq.com/skin/show/js/modernizr.js"></script>
+<![endif]-->
+<script type="text/javascript" src="ajax.js" tppabs="http://showtime.yangqq.com/e/data/js/ajax.js"></script>
+</head>
+<body>
+<header class="header-navigation" id="header">
+  <nav>
+    <div class="logo"><a href="index.htm" tppabs="http://showtime.yangqq.com/">杨青个人博客</a></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+ <ul id="starlist">
+<li><a href="index.htm" tppabs="http://showtime.yangqq.com/">首页</a></li>
+ 
+ 
+<li ><a href="index-1.htm" tppabs="http://showtime.yangqq.com/about/">关于我</a></li> 
+ 
+ 
+<li ><a href="index-2.htm" tppabs="http://showtime.yangqq.com/photo/">图片集锦</a></li> 
+ 
+ 
+<li ><a href="index-3.htm" tppabs="http://showtime.yangqq.com/life/">慢生活</a></li> 
+ 
+ 
+<li class="selected"><a href="index-4.htm" tppabs="http://showtime.yangqq.com/study/">学无止境</a></li> 
+ 
+ 
+<li ><a href="index-5.htm" tppabs="http://showtime.yangqq.com/time/">时间轴</a></li> 
+ 
+ 
+<li ><a href="-bid=1.htm" tppabs="http://showtime.yangqq.com/e/tool/gbook/?bid=1">留言</a></li> 
+ 
+    </ul>
+    <div class="searchbox">
+    <div id="search_bar" class="search_bar">
+      <form  id="searchform" action="http://showtime.yangqq.com/e/search/index.php" method="post" name="searchform">
+        <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
+        <input type="hidden" name="show" value="title" />
+        <input type="hidden" name="tempid" value="1" />
+        <input type="hidden" name="tbname" value="news">
+        <input type="hidden" name="Submit" value="搜索" />
+        <p class="search_ico"> <span></span></p>
+      </form>
+     </div> 
+    </div>
+  </nav>
+</header>
+<article>
+  <main>
+  <div class="infosbox">
+    <div class="newsview">
+      <h3 class="news_title">帝国cms 如何使用静态页面？</h3>
+      <div class="bloginfo">
+        <ul>
+          <li class="author">
+</li>
+          <li class="lmname">网站建设</li>
+          <li class="timer">2018-07-03</li>
+          <li class="view"><script src=%22-classid=15&id=39&addclick=1.js%22 tppabs="http://showtime.yangqq.com/e/public/ViewClick/?classid=15&id=39&addclick=1"></script>人已阅读</li>
+        </ul>
+      </div>
+      <div class="tags"></div>
+      <div class="news_about"><strong>简介</strong>一般模板下载站，包括我的网站，所说的静态页面模板，指的是html页面。一个不需要后台，不需要数据库就能预览的页面。例如，纯文字《时尚黑》这个博客模板，html代码是这样</div>
+      <div class="news_con">         一般模板下载站，包括我的网站，所说的静态页面模板，指的是html页面。一个不需要后台，不需要数据库就能预览的页面。例如，纯文字《时尚黑》这个博客模板，html代码是这样的：<br />&nbsp;<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><p>&lt;header&gt;<br />&nbsp; &lt;div class=&quot;logo&quot;&gt;&lt;a href=&quot;http://www.yangqq.com&quot;&gt;杨青个人博客&lt;/a&gt;&lt;/div&gt;<br />&nbsp; &lt;nav&gt;<br />&nbsp; &nbsp; &lt;ul id=&quot;starlist&quot;&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;网站首页&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;关于我&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;博客日记&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;info.html&quot;&gt;慢生活&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;time.html&quot;&gt;时间轴&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;time.html&quot;&gt;时间轴&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &lt;/ul&gt;<br />&nbsp; &lt;/nav&gt;<br />&lt;/header&gt;</p></div><br />我们要把他们从数据库里面调用出来，套用帝国cms写法是这样的：<br />&nbsp;<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><p>&lt;header&gt;<br />&nbsp; &lt;div class=&quot;logo&quot;&gt;&lt;a href=&quot;<span style="color:#FF0000;">&#091;!--news.url--]</span>&quot;&gt;杨青个人博客&lt;/a&gt;&lt;/div&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ////////// &nbsp; <strong>&#091;!--news.url--] 是网站地址</strong><br />&nbsp; &lt;nav&gt;<br />&nbsp; &nbsp; &lt;ul id=&quot;starlist&quot;&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;<span style="color:#FF0000;">&#091;!--news.url--]</span>&quot;&gt;网站首页&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp;<span style="color:#FF0000;"> &nbsp;[listshowclass]&#39;0&#39;,12,0,0[/listshowclass]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>//////////&nbsp;&nbsp;<b>循环栏目导航标签&nbsp;(listshowclass)&nbsp; &nbsp;</b>&#39;0&#39;为显示所有一级栏目，12是标签模板<br />&nbsp; &nbsp; &lt;/ul&gt;<br />&nbsp; &lt;/nav&gt;<br />&lt;/header&gt;</p></div><div><br />ID 12的标签模板 这样写<br />&nbsp;<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><p><strong>页面模板内容</strong>(*)<br /><br /><span style="color:#FF0000;">&#091;!--empirenews.listtemp--]<br />&lt;!--list.var1--&gt;<br />&#091;!--empirenews.listtemp--]</span><br /><br /><strong>列表内容模板(list.var)&nbsp;</strong>(*)<br /><span style="color:#FF0000;">&lt;li&gt;&lt;a href=&quot;&#091;!--classurl--]&quot;&gt;&#091;!--classname--]&lt;/a&gt;&lt;/li&gt;</span><br />&nbsp;</p></div><p><br />原理大概是这样的，现在我们实际操作一个页面，比如纯文字《时尚黑》模板，安装好帝国cms后，到FTP根目录，找到skin文件夹，再新建一个wenzi文件夹，将时尚黑的内容全部上传到wenzi文件夹。<br /><br /><img alt="" src="714ae1d54d3d4f1f1495ff6d8834a05a.png" tppabs="http://showtime.yangqq.com/showtime/d/file/p/2018/08-04/714ae1d54d3d4f1f1495ff6d8834a05a.png" /><br />修改首页模板<br /><br /><strong>复制index.html所有代码，粘贴到首页模板</strong><br /><br /><img alt="" src="241361a5f67768ff6af7af93d68097c7.png" tppabs="http://showtime.yangqq.com/showtime/d/file/p/2018/08-04/241361a5f67768ff6af7af93d68097c7.png" /><br /><br />保存一下，再刷新首页，你会发现css的路径是不对的，所以要修改路径&nbsp;<span style="color:#FF0000;">&#091;!--news.url--]</span>skin/wenzi/<br />&nbsp;</p><div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">&lt;link href=&quot;&#091;!--news.url--]skin/wenzi/css/index.css&quot; rel=&quot;stylesheet&quot;&gt;</div><br />网站名称，关键字词，也都要替换成标签</div><p><img alt="" src="d1e8281db8d14d20e3e074820d503f63.png" tppabs="http://showtime.yangqq.com/showtime/d/file/p/2018/08-04/d1e8281db8d14d20e3e074820d503f63.png" /><br /><br /><br />类似下面这样的标题应该怎么调用呢？</p><div><div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">&nbsp; &nbsp; &lt;ul class=&quot;newsli&quot;&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; title=&quot;个人博客，属于我的小世界！&quot;&gt;个人博客，属于我的小世界！&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; title=&quot;作为一个设计师,如果遭到质疑你是否能恪守自己的原则?&quot;&gt;作为一个设计师,如果遭到质疑你是否能恪守自己的原则&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; title=&quot;Come on,行动起来吧!我们和时间来一场赛跑!&quot;&gt;Come on,行动起来吧!我们和时间来一场赛跑!&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; title=&quot;或许换一个活法,能让你走出阴霾&quot;&gt;或许换一个活法,能让你走出阴霾&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; title=&quot;即便是坑，我也想要拉你入伙！&quot;&gt;即便是坑，我也想要拉你入伙！&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; title=&quot;女程序员职业生涯该如何发展？&quot;&gt;女程序员职业生涯该如何发展？&lt;/a&gt;&lt;/li&gt;<br />&nbsp; &nbsp; &lt;/ul&gt;</div></div><br /><strong>灵动标签调用</strong><br />[e:loop={&quot;select * from [!db.pre!]ecms_news order by id desc&quot;,0,24,0}]<br />&nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;&lt;?=$bqsr[&#39;titleurl&#39;]?&gt;&quot;title=&quot;&lt;?=$bqr[&#39;title&#39;]?&gt;&quot; target=&quot;_blank&quot;&gt;&lt;?=$bqr[&#39;title&#39;]?&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;<br />[/e:loop]<br /><br /><strong>万能模板标签调用</strong><br />[ecmsinfo]&#39;news&#39;,6,0,1,0,14,1,0,0[/ecmsinfo]&nbsp; &nbsp;其中14就是标签模板ID<br /><br /><font color="#FF0000"><strong>万能标签语法</strong></font>：<br /><strong>[ecmsinfo]</strong>栏目ID,显示条数,标题截取数,是否显示栏目名,操作类型,<strong><font color="#FF0000">标签模板ID</font></strong>,只显示有标题图片<strong>[/ecmsinfo]<br /><br />再修改ID为14的标签模板<br />列表头</strong>和<strong>列表尾</strong>用&#091;!--empirenews.listtemp--]表示,是固定的,代表循环的开始和结束。<br />其中循环的信息内容用<font color="#FF0000">列表内容变量&lt;!--list.var*--&gt;</font>表示。<br /><br />帝国cms就是以上两种方式调用，一种是灵动标签，一种是万能标签。<br /><br />根据个人习惯，当然一个页面也可以混合，具体看官方教程，已经很详细了，我这里不再做解释<br /><br /><font color="blue"><b>一招鲜吃遍天系列教程之万能标签教程：</b></font><table bgcolor="#cccccc" border="0" cellpadding="10" cellspacing="1" width="100%">	<tbody>		<tr>			<td bgcolor="#FFFFFF" width="100%">在线观看：<a href="javascript:if(confirm(%27http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.html%27" tppabs="http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.html" target="_blank">http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.html</a><br />			教程下载：<a href="javascript:if(confirm(%27http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.zip  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.zip%27" tppabs="http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.zip" target="_blank">http://www.phome.net/doc/ecmsedu/yizhao/ecmsinfo/ecmsinfo.zip</a></td>		</tr>	</tbody></table><br /><br /><font color="blue"><b>一招鲜吃遍天系列教程之灵动标签：</b></font><table bgcolor="#cccccc" border="0" cellpadding="10" cellspacing="1" width="100%">	<tbody>		<tr>			<td bgcolor="#FFFFFF" width="100%">在线观看：<a href="javascript:if(confirm(%27http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.html%27" tppabs="http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.html" target="_blank">http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.html</a><br />			教程下载：<a href="javascript:if(confirm(%27http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.zip  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.zip%27" tppabs="http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.zip" target="_blank">http://www.phome.net/doc/ecmsedu/yizhao/eloop/eloop.zip</a></td>		</tr>	</tbody></table><br />刚开始掌握帝国cms确实是比较难，看官方的教程一步步来。       </div>
+    </div>
+    <div class="share">
+<p class="diggit"><a href="JavaScript:makeRequest('/e/public/digg/?classid=15&id=39&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"> 很赞哦！ </a>(<b id="diggnum"><script type="text/javascript" src="-classid=15&id=39&down=5.js" tppabs="http://showtime.yangqq.com/e/public/ViewClick/?classid=15&id=39&down=5"></script></b>)</p>
+
+</div>
+    <div class="nextinfo">
+      <p>上一篇：<a href="38.html" tppabs="http://showtime.yangqq.com/study/web/38.html">帝国cms结合项如何实现多条件查询</a></p>
+      <p>下一篇：<a href="40.html" tppabs="http://showtime.yangqq.com/study/web/40.html">个人博客模板《show time》后台管理</a></p>
+    </div>
+    <div class="news_pl">
+      <h2>文章评论</h2>
+    <div class="gbko">
+        <script src="-classid=15&id=39&num=20.js" tppabs="http://showtime.yangqq.com/e/pl/more/?classid=15&id=39&num=20"></script>
+         <script>
+		  function CheckPl(obj)
+		  {
+		  if(obj.saytext.value=="")
+		  {
+		  alert("您没什么话要说吗？");
+		  obj.saytext.focus();
+		  return false;
+		  }
+		  return true;
+		  }
+		  </script><form action="http://showtime.yangqq.com/e/pl/doaction.php" method="post" name="saypl" id="saypl" onsubmit="return CheckPl(document.saypl)">
+<div id="plpost">
+<p class="saying"><span><a href="javascript:if(confirm(%27http://showtime.yangqq.com/e/pl/?classid=15&id=39  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://showtime.yangqq.com/e/pl/?classid=15&id=39%27" tppabs="http://showtime.yangqq.com/e/pl/?classid=15&id=39">共有<script type="text/javascript" src="-classid=15&id=39&down=2.js" tppabs="http://showtime.yangqq.com/e/public/ViewClick/?classid=15&id=39&down=2"></script>条评论</a></span>来说两句吧...</p>
+<p class="yname"><span>用户名:</span><input name="username" type="text" class="inputText" id="username" value="" size="16" /></p>
+<p class="yzm"><span>验证码:</span><input name="key" type="text" class="inputText" size="16" />
+<img src="-v=pl.jpg" tppabs="http://showtime.yangqq.com/e/ShowKey/?v=pl" align="absmiddle" name="plKeyImg" id="plKeyImg" onclick="plKeyImg.src='/e/ShowKey/?v=pl&t='+Math.random()" title="看不清楚,点击刷新" /> </p>
+<input name="nomember"  type="hidden" id="nomember" value="1" checked="checked" />
+<textarea name="saytext" rows="6" id="saytext"></textarea><input name="imageField" type="submit" value="提交"/>
+<input name="id" type="hidden" id="id" value="39" />
+<input name="classid" type="hidden" id="classid" value="15" />
+<input name="enews" type="hidden" id="enews" value="AddPl" />
+<input name="repid" type="hidden" id="repid" value="0" />
+<input type="hidden" name="ecmsfrom" value="/study/web/39.html"></td>
+</div></form>
+    </div>
+    </div>
+  </div>
+  </main>
+  <aside id="stickMe">
+    <div class="r_box" >     
+      <div class="tuijian">
+        <h2 id="tab"><a href="#"class="current">点击排行</a><a href="#">站长推荐</a></h2>       
+     <div id="content">
+        <ul style="display:block;">
+          <li><a href="1.html" tppabs="http://showtime.yangqq.com/study/web/1.html" target="_blank">个人博客模板《show time》蓝色版 </a></li>
+          <li><a href="35.html" tppabs="http://showtime.yangqq.com/study/web/35.html" target="_blank">帝国cms列表页调用关键字tag标签 </a></li>
+          <li><a href="43.html" tppabs="http://showtime.yangqq.com/study/web/43.html" target="_blank">帝国cms 栏目高级调用 高亮并且二级栏目增加样... </a></li>
+          <li><a href="36.html" tppabs="http://showtime.yangqq.com/study/web/36.html" target="_blank">帝国cms去掉广告图片的高和宽 </a></li>
+          <li><a href="37.html" tppabs="http://showtime.yangqq.com/study/web/37.html" target="_blank">个人博客模板《More》后台管理 </a></li>
+          <li><a href="45.html" tppabs="http://showtime.yangqq.com/study/web/45.html" target="_blank">个人博客模板《绅士》后台管理 </a></li>
+          <li><a href="39.html" tppabs="http://showtime.yangqq.com/study/web/39.html" target="_blank">帝国cms 如何使用静态页面？ </a></li>
+          <li><a href="46.html" tppabs="http://showtime.yangqq.com/study/web/46.html" target="_blank">常用的js固定层代码 </a></li>
+          <li><a href="38.html" tppabs="http://showtime.yangqq.com/study/web/38.html" target="_blank">帝国cms结合项如何实现多条件查询 </a></li>
+          <li><a href="40.html" tppabs="http://showtime.yangqq.com/study/web/40.html" target="_blank">个人博客模板《show time》后台管理 </a></li>
+          <li><a href="42.html" tppabs="http://showtime.yangqq.com/study/web/42.html" target="_blank">个人博客用帝国cms 自定义页面 灵动标签调用网... </a></li>
+          <li><a href="41.html" tppabs="http://showtime.yangqq.com/study/web/41.html" target="_blank">帝国cms 封面模板标题调用栏目别名的方法 </a></li>
+        </ul>             
+        <ul>
+          <li><a href="35.html" tppabs="http://showtime.yangqq.com/study/web/35.html" target="_blank">帝国cms列表页调用关键字tag标签 </a></li>
+        </ul>
+       </div>
+      </div>
+ <div class="wdxc">
+        <h2>图文精选</h2>
+        <ul>
+                     <li><a href="25.html" tppabs="http://showtime.yangqq.com/study/biji/25.html" title="【匆匆那些年】总结个人博客经历的这四年…" target="_blank"><img src="a465dddcbbcce5f7d73e1ea7fdc48b11-1.jpg" tppabs="http://showtime.yangqq.com/showtime/d/file/p/2018/08-04/a465dddcbbcce5f7d73e1ea7fdc48b11.jpg"></a></li>
+                     <li><a href="27.html" tppabs="http://showtime.yangqq.com/study/biji/27.html" title="帝国cms常用标签调用方法总结（不得不收藏哦）" target="_blank"><img src="a0b65d3d8160f90f6556c4dfa3a85a59-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg"></a></li>
+                     <li><a href="28.html" tppabs="http://showtime.yangqq.com/study/biji/28.html" title="使用ASPCMS建站网站被黑" target="_blank"><img src="2ab0bdcc2d40794f183031053dd1a4d2-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-06-17/2ab0bdcc2d40794f183031053dd1a4d2.jpg"></a></li>
+                     <li><a href="29.html" tppabs="http://showtime.yangqq.com/study/biji/29.html" title="IE6到底哪里不好？你还继续用IE6吗？" target="_blank"><img src="b1d8cde248671b1e75ef302609595b1f-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-05-26/b1d8cde248671b1e75ef302609595b1f.jpg"></a></li>
+                     <li><a href="31.html" tppabs="http://showtime.yangqq.com/study/biji/31.html" title="IE常见bugs以及解决方案列表" target="_blank"><img src="1ed9f310ffdbfdbb4c695671233296b5-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-05-14/1ed9f310ffdbfdbb4c695671233296b5.jpg"></a></li>
+                     <li><a href="32.html" tppabs="http://showtime.yangqq.com/study/biji/32.html" title="鼠标悬停图片、文字css3效果" target="_blank"><img src="12f33cc4c1c692e2fa0017275fcc265f-2.jpg" tppabs="http://showtime.yangqq.com/d/file/jstt/bj/2014-01-14/12f33cc4c1c692e2fa0017275fcc265f.jpg"></a></li>
+                   </ul>
+      </div>
+<div class="cloud">
+      <h2>标签云</h2>
+      <ul>
+ <a href="-tagname=个人博客模板&tempid=11.htm" tppabs="http://showtime.yangqq.com/e/tags/?tagname=%B8%F6%C8%CB%B2%A9%BF%CD%C4%A3%B0%E5&tempid=11" target="_blank">个人博客模板</a>      </ul>
+    </div>
+      <div class="guanzhu">
+        <h2>关注我 么么哒</h2>
+        <ul>
+          <img src="wx.jpg" tppabs="http://showtime.yangqq.com/skin/show/images/wx.jpg">
+        </ul>
+      </div>
+    </div>
+  </aside>
+</article>
+<footer>
+  <p>Design by <a href="index.htm" tppabs="http://showtime.yangqq.com/" target="_blank">杨青个人博客</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a><script src="-enews=donews&classid=15&id=39.js" tppabs="http://showtime.yangqq.com/e/public/onclick/?enews=donews&classid=15&id=39"></script></body>
+</html>

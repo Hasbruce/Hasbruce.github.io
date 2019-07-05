@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Route::resource('/','home\IndexController');                        //首页
-Route::get('home/shop','home\IndexController@shop');                //商品
-Route::get('home/shopdetail','home\IndexController@shopdetail');    //商品详情
+Route::get('home/perInfo','home\IndexController@perInfo');                //个人信息
+Route::get('home/writeBlog','home\IndexController@writeBlog');    //写博客
+Route::get('home/share','home\IndexController@share');    //博客分享
+Route::get('home/list','home\IndexController@list');    //博客日记
+Route::get('home/fengmain','home\IndexController@fengmain');    //学无止境
+Route::get('home/time','home\IndexController@time');    //学无止境

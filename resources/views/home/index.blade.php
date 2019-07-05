@@ -1,1016 +1,264 @@
 @extends('layout.header')
 @section('content')
-<!-- Preloader -->
-<div id="loading-overlay">
-    <div class="loader"></div>
-</div>
+<header class="header-navigation" id="header">
+    <nav>
+        <div class="logo"><a href="/" tppabs="http://showtime.yangqq.com/">故乡个人博客</a></div>
+        <h2 id="mnavh"><span class="navicon"></span></h2>
+        <ul id="starlist">
+            <li><a href="/" tppabs="http://showtime.yangqq.com/">首页</a></li>
 
-<!-- Boxed -->
-<div class="boxed">
-    <div id="site-header-wrap">
-        <!-- Header -->
-        <header id="header" class="header header-container clearfix">
-            <div class="container clearfix" id="site-header-inner">
-                <div id="logo" class="logo float-left">
-                    <a href="/" title="logo">
-                        <img src="/1/images/logo.png" alt="image" width="107" height="24" data-retina="images/logo@2x.png" data-width="107" data-height="24">
-                    </a>
-                </div><!-- /.logo -->
-                <div class="mobile-button"><span></span></div>
-                <ul class="menu-extra">
-                    <li class="box-search">
-                        <a class="icon_search header-search-icon" href="#"></a>
-                        <form role="search" method="get" class="header-search-form" action="#">
-                            <input type="text" value="" name="s" class="header-search-field" placeholder="Search...">
-                            <button type="submit" class="header-search-submit" title="Search">Search</button>
-                        </form>
-                    </li>
-                    <li class="box-login">
-                        <a class="icon_login" href="#"></a>
-                    </li>
-                    <li class="box-cart nav-top-cart-wrapper">
-                        <a class="icon_cart nav-cart-trigger active" href="#"><span>3</span></a>
-                        <div class="nav-shop-cart">
-                            <div class="widget_shopping_cart_content">
-                                <div class="woocommerce-min-cart-wrap">
-                                    <ul class="woocommerce-mini-cart cart_list product_list_widget ">
-                                        <li class="woocommerce-mini-cart-item mini_cart_item">
-                                            <span>No Items in Shopping Cart</span>
-                                        </li>
-                                    </ul>
-                                </div><!-- /.widget_shopping_cart_content -->
-                            </div>
-                        </div><!-- /.nav-shop-cart -->
-                    </li>
-                </ul><!-- /.menu-extra -->
-                <div class="nav-wrap">
-                    <nav id="mainnav" class="mainnav">
-                        <ul class="menu">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/home/shop">Shop</a></li>
-                            <li><a href="/home/shopdetail">Shop Detail</a></li>
-                        </ul>
-                    </nav><!-- /.mainnav -->
-                </div><!-- /.nav-wrap -->
-            </div><!-- /.container-fluid -->
-        </header><!-- /header -->
-    </div><!-- /#site-header-wrap -->
 
-    <!-- SLIDER -->
-    <div class="rev_slider_wrapper fullwidthbanner-container">
-        <div id="rev-slider1" class="rev_slider fullwidthabanner">
+            <li ><a href="/home/proinfo" tppabs="http://showtime.yangqq.com/about/">关于我</a></li>
+
+
+            <li ><a href="/home/list" tppabs="http://showtime.yangqq.com/photo/">图片集锦</a></li>
+
+
+            <li ><a href="/home/slowlife" tppabs="http://showtime.yangqq.com/life/">慢生活</a></li>
+
+
+            <li ><a href="/home/fengmain" tppabs="http://showtime.yangqq.com/study/">学无止境</a></li>
+
+
+            <li ><a href="/home/time" tppabs="http://showtime.yangqq.com/time/">时间轴</a></li>
+
+
+            <li ><a href="/home/talk" tppabs="http://showtime.yangqq.com/e/tool/gbook/?bid=1">留言</a></li>
+
+        </ul>
+        <div class="searchbox">
+            <div id="search_bar" class="search_bar">
+                <form  id="searchform" action="http://showtime.yangqq.com/e/search/index.php" method="post" name="searchform">
+                    <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
+                    <input type="hidden" name="show" value="title" />
+                    <input type="hidden" name="tempid" value="1" />
+                    <input type="hidden" name="tbname" value="news">
+                    <input type="hidden" name="Submit" value="搜索" />
+                    <p class="search_ico"> <span></span></p>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<article>
+    <!--banner begin-->
+    <div class="banner">
+        <div id="banner" class="fader">
+            <li class="slide" ><a href="/showtime/12.html" tppabs="http://showtime.yangqq.com/life/12.html" title="安静地做一个爱设计的女子" target="_blank"><img src="/showtime//banner01-1.jpg" tppabs="http://www.yangqq.com/skin/852/images/banner01.jpg"><span class="imginfo">安静地做一个爱设计的女子</span></a></li>
+            <li class="slide" ><a href="/showtime/13.html" tppabs="http://showtime.yangqq.com/life/13.html" title="个人博客，属于我的小世界！" target="_blank"><img src="/showtime//762f99f369ae786f970477feeb3b9d77-1.jpg" tppabs="http://www.yangqq.com/d/file/news/life/2018-04-27/762f99f369ae786f970477feeb3b9d77.jpg"><span class="imginfo">个人博客，属于我的小世界！</span></a></li>
+            <div class="fader_controls">
+                <div class="page prev" data-target="prev">&lsaquo;</div>
+                <div class="page next" data-target="next">&rsaquo;</div>
+                <ul class="pager_list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--banner end-->
+    <div class="toppic">
+        <li><a href="/showtime/52.html" tppabs="http://showtime.yangqq.com/life/52.html" title="个人博客从简不繁" target="_blank"><i><img src="/showtime//7d49754e217a5ad6b80e88acde94bc57-1.jpg" tppabs="http://www.yangqq.com/d/file/news/s/2018-06-29/7d49754e217a5ad6b80e88acde94bc57.jpg"></i>
+                <h2>个人博客从简不繁</h2>
+                <span>慢生活</span> </a> </li>
+        <li><a href="/showtime/34.html" tppabs="http://showtime.yangqq.com/study/biji/34.html" title="我们可以从CSS框架中借鉴到什么" target="_blank"><i><img src="/showtime//bc2570db45bb0e607cbb3f3bffdec246.png" tppabs="http://showtime.yangqq.com/d/file/p/2018/08-04/bc2570db45bb0e607cbb3f3bffdec246.png"></i>
+                <h2>我们可以从CSS框架中借鉴到什么</h2>
+                <span>学习笔记</span> </a> </li>
+    </div>
+    <main>
+        <div class="news_box">
             <ul>
-                <!-- Slide 1 -->
-                <li data-transition="random">
-                    <!-- Main Image -->
-                    <img src="/1/images/slider/slider-bg-5.jpg" alt="" data-bgposition="center center" data-no-retina>
-
-                    <!-- Layers -->
-                    <div class="tp-caption tp-resizeme text-white font-weight-300"
-                         data-x="['left','left','left','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-93','-93','-93','-93']"
-                         data-fontsize="['24','24','24','18']"
-                         data-lineheight="['72','72','72','36']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="700"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        NEW TREND 2018
-                    </div>
-
-                    <div class="tp-caption tp-resizeme text-white font-weight-500"
-                         data-x="['left','left','left','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-42','-42','-42','-42']"
-                         data-fontsize="['52','52','52','40']"
-                         data-lineheight="['60','60','60','40']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        New Collection
-                    </div>
-
-                    <div class="tp-caption tp-resizeme text-white font-weight-400 "
-                         data-x="['left','left','left','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['12','12','12','12']"
-                         data-fontsize="['18','18','18','16']"
-                         data-lineheight="['72','72','72','38']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        BIG SALE OF THIS WEEK UP TO 30%
-                    </div>
-
-                    <div class="tp-caption"
-                         data-x="['left','left','left','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['80','80','80','80']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        <a href="#" class="themesflat-button has-padding-36 bg-accent has-shadow"><span>SHOP NOW</span></a>
-                    </div>
+                <li>
+                    <i>
+                        <a href="/showtime/11.html" tppabs="http://showtime.yangqq.com/life/11.html"
+                           title="我是怎么评价自己的？" target="_blank">
+                            <img src="/showtime//95d1b1577a8a7aa4fe3893f2502617e9-1.jpg" tppabs="http://www.yangqq.com/d/file/news/s/2018-07-28/95d1b1577a8a7aa4fe3893f2502617e9.jpg">
+                        </a>
+                    </i>
+                    <h3>
+                        <a href="/showtime/11.html" tppabs="http://showtime.yangqq.com/life/11.html"
+                           title="我是怎么评价自己的？" target="_blank">
+                            我是怎么评价自己的？
+                        </a>
+                    </h3>
                 </li>
-                <!-- /End Slide 1 -->
-
-                <!-- Slide 2 -->
-                <li data-transition="random">
-                    <!-- Main Image -->
-                    <img src="/1/images/slider/slider-bg-1.jpg" alt="" data-bgposition="center center" data-no-retina>
-
-                    <!-- Layers -->
-                    <div class="tp-caption tp-resizeme text-333 font-weight-400 text-right"
-                         data-x="['right','right','right','center']" data-hoffset="['33','33','33','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-115','-115','-115','-115']"
-                         data-fontsize="['22','22','22','22']"
-                         data-lineheight="['60','60','60','60']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="700"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        <span class="text-line left"></span>Summer Fashion<span class="text-line right"></span>
-                    </div>
-
-                    <div class="tp-caption tp-resizeme text-333 font-weight-500 letter-spacing-10 text-right"
-                         data-x="['right','right','right','center']" data-hoffset="['13','13','13','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-39','-39','-39','-59']"
-                         data-fontsize="['130','130','130','60']"
-                         data-lineheight="['130','130','130','60']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        SALE
-                    </div>
-
-                    <div class="tp-caption tp-resizeme text-333 font-weight-400 text-right"
-                         data-x="['right','right','right','center']" data-hoffset="['13','13','13','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','5']"
-                         data-fontsize="['48','48','48','28']"
-                         data-lineheight="['60','60','60','40']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        UP TO <span class="text-accent">30%</span> OFF
-                    </div>
-
-                    <div class="tp-caption text-right"
-                         data-x="['right','right','right','center']" data-hoffset="['105','105','105','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['138','138','138','80']"
-                         data-width="full"
-                         data-height="none"
-                         data-whitespace="normal"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                         data-mask_in="x:0px;y:[100%];"
-                         data-mask_out="x:inherit;y:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on">
-                        <a href="#" class="themesflat-button bg-accent has-shadow"><span>BY NOW</span></a>
-                    </div>
+                <li>
+                    <i>
+                        <a href="/showtime/14.html" tppabs="http://showtime.yangqq.com/life/14.html"
+                           title="作为一个设计师,如果遭到质疑你是否能恪守自己的原则?" target="_blank">
+                            <img src="/showtime/75842f4d1e18d692a66c38eb172a40ab-1.jpg" tppabs="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg">
+                        </a>
+                    </i>
+                    <h3>
+                        <a href="/showtime/14.html" tppabs="http://showtime.yangqq.com/life/14.html"
+                           title="作为一个设计师,如果遭到质疑你是否能恪守自己的原则?" target="_blank">
+                            作为一个设计师,如果遭到质疑你是否能恪守自己的原则?
+                        </a>
+                    </h3>
                 </li>
-                <!-- /End Slide 2 -->
             </ul>
         </div>
-    </div>
-    <!-- END SLIDER -->
+        <div class="pics">
+            <ul>
+                <li>
+                    <i>
+                        <a href="/showtime/53.html" tppabs="http://showtime.yangqq.com/life/53.html"
+                           title="云南之行——丽江古镇玉龙雪山" target="_blank">
+                            <img src="/showtime/cb83fc3e74125e79a3c508eecbe99cda-1.jpg" tppabs="http://www.yangqq.com/d/file/news/s/2014-01-04/cb83fc3e74125e79a3c508eecbe99cda.jpg">
+                        </a>
+                    </i>
+                    <span>
+                云南之行——丽江古镇玉龙雪山
+            </span>
+                </li>
+                <li>
+                    <i>
+                        <a href="/showtime/54.html" tppabs="http://showtime.yangqq.com/life/54.html"
+                           title="云南之行——大理洱海一日游" target="_blank">
+                            <img src="/showtime/8f91a94816062276afe62062ef271239-1.jpg" tppabs="http://www.yangqq.com/d/file/news/s/2014-01-04/8f91a94816062276afe62062ef271239.jpg">
+                        </a>
+                    </i>
+                    <span>
+                云南之行——大理洱海一日游
+            </span>
+                </li>
+                <li>
+                    <i>
+                        <a href="/showtime/55.html" tppabs="http://showtime.yangqq.com/life/55.html"
+                           title="云南之行——初到昆明滇池半日游" target="_blank">
+                            <img src="/showtime/9129a0317b9e3dda6b8e5e4af8f21b60-1.jpg" tppabs="http://www.yangqq.com/d/file/news/s/2014-01-04/9129a0317b9e3dda6b8e5e4af8f21b60.jpg">
+                        </a>
+                    </i>
+                    <span>
+                云南之行——初到昆明滇池半日游
+            </span>
+                </li>
+            </ul>
+        </div>
+        <div class="blogtab">
+            <ul id="blogtab">
+                <li class="current">站长推荐</li>
+                <li><a href="/showtime/" target="_blank"></a></li>
+            </ul>
 
-    <!-- IMAGE BOX -->
-    <section class="flat-row row-image-box">
-        <div class="container">
-            <div class="row gutter-10">
-                <div class="col-sm-6 col-md-4">
-                    <div class="flat-image-box style-1 data-effect div-h22 clearfix">
-                        <div class="item data-effect-item">
-                            <div class="inner">
-                                <div class="thumb">
-                                    <img src="/1/images/image-box/imgbox-1-375x500.jpg" alt="Image">
-                                    <div class="elm-btn">
-                                        <a href="#" class="themesflat-button bg-white width-150">For Men’s</a>
-                                    </div>
-                                    <div class="overlay-effect bg-color-1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-4 -->
-                <div class="col-sm-6 col-md-4">
-                    <div class="flat-image-box style-1 row2 data-effect clearfix">
-                        <div class="item data-effect-item">
-                            <div class="inner">
-                                <div class="thumb">
-                                    <img src="/1/images/image-box/imgbox-1-375x240.jpg" alt="Image">
-                                    <div class="elm-btn">
-                                        <a href="#" class="themesflat-button bg-white width-150">For Kid’s</a>
-                                    </div>
-                                    <div class="overlay-effect bg-color-1"></div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
 
-                        <div class="item data-effect-item">
-                            <div class="inner">
-                                <div class="thumb">
-                                    <img src="/1/images/image-box/imgbox-2-375x240.jpg" alt="Image">
-                                    <div class="elm-btn">
-                                        <a href="#" class="themesflat-button bg-white width-150">accessories</a>
-                                    </div>
-                                    <div class="overlay-effect bg-color-1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-4 -->
-                <div class="col-sm-6 col-md-4">
-                    <div class="flat-image-box style-1 data-effect div-h20 clearfix">
-                        <div class="item data-effect-item">
-                            <div class="inner">
-                                <div class="thumb">
-                                    <img src="/1/images/image-box/imgbox-2-375x500.jpg" alt="Image">
-                                    <div class="elm-btn">
-                                        <a href="#" class="themesflat-button bg-white width-150">For woMen’s</a>
-                                    </div>
-                                    <div class="overlay-effect bg-color-1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-4 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- END IMAGE BOX -->
 
-    <!-- PRODUCT NEW -->
-    <section class="flat-row row-product-new">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section margin-bottom-52">
-                        <h2 class="title">
-                            New Product
-                        </h2>
-                    </div>
-                    <div class="product-content product-fourcolumn clearfix">
-                        <ul class="product style2 clearfix">
-                            <li class="product-item">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/13.jpg" alt="image">
-                                    </a>
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="product-info text-center clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                    <ul class="flat-color-list width-14">
-                                        <li>
-                                            <a href="#" class="red"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="blue"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="black"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
+                <h3 class="blogtitle"><a href="/showtime/35.html" tppabs="http://showtime.yangqq.com/study/web/35.html" target="_blank" >帝国cms列表页调用关键字tag标签</a></h3>
+                <span class="blogpic"><a href="/showtime/35.html" tppabs="http://showtime.yangqq.com/study/web/35.html" title="帝国cms列表页调用关键字tag标签"><img src="/showtime/fbe877634a8eb658f4d19b83c960d6ab-1.png" tppabs="http://www.yangqq.com/d/file/jstt/web/2018-07-16/fbe877634a8eb658f4d19b83c960d6ab.png" alt="帝国cms列表页调用关键字tag标签"></a></span>
 
-                            <li class="product-item">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/14.jpg" alt="image">
-                                    </a>
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                    <ul class="flat-color-list width-14">
-                                        <li>
-                                            <a href="#" class="red"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="blue"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="black"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/15.jpg" alt="image">
-                                    </a>
-                                    <span class="new sale">Sale</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <del>
-                                            <span class="regular">$150.00</span>
-                                        </del>
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/16.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                    <ul class="flat-color-list width-14">
-                                        <li>
-                                            <a href="#" class="red"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="blue"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="black"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- END PRODUCT NEW -->
+                <p class="blogtext">有很多朋友都在问帝国cms列表页怎么调用关键字tag，tag作为内链手法，对于SEO有一定的好处，下面故乡博客就实例讲述一下帝国cms列表页面调用关键字tag标签的方法，分享给大... </p>
+                <div class="bloginfo">
+                    <ul>
+                        <li class="author"></li>
+                        <li class="lmname"><a href="/showtime/index-6.htm" tppabs="http://showtime.yangqq.com/study/web/"  target="_blank" >网站建设</a></li>
+                        <li class="timer">2018-07-26</li>
+                        <li class="view"><span>22</span>已阅读</li>
 
-    <!-- ANIMATION BOX -->
-    <section class="flat-row row-animation-box bg-section row-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="flat-animation-block" >
-                        <div class="title-section width-before-17 bg-before-white margin-bottom-14">
-                            <div class="sup-title"><span>NEW TREND 2018</span></div>
-                            <h2 class="title font-size-52 line-height-76">Women‘s Collection</h2>
-                            <div class="sub-title"><span>Big Sale of this Week</span></div>
-                        </div>
-                        <div class="elm-btn text-center">
-                            <a href="#" class="themesflat-button bg-accent has-padding-36">Shop Now</a>
-                        </div>
-                    </div><!-- /.flat-animation-block -->
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- END ANIMATION BOX -->
-
-    <!-- PRODUCT -->
-    <section class="flat-row row-product-project style-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section margin-bottom-41">
-                        <h2 class="title">Best Sale</h2>
-                    </div>
-                    <ul class="flat-filter style-1 text-center max-width-682 clearfix">
-                        <li class="active"><a href="#" data-filter="*">All Product</a></li>
-                        <li><a href="#" data-filter=".kid">For Kid’s</a></li>
-                        <li><a href="#" data-filter=".man">For Man’s</a></li>
-                        <li><a href="#" data-filter=".woman">For Woman’s</a></li>
-                        <li><a href="#" data-filter=".accessories">Accessories</a></li>
                     </ul>
-                    <div class="divider h54"></div>
-                    <div class="product-content product-fourcolumn clearfix">
-                        <ul class="product style2 isotope-product clearfix">
-                            <li class="product-item kid woman">
-                                <div class="product-thumb clearfix">
-                                    <a href="#">
-                                        <img src="/1/images/shop/sh-4/1.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                    <ul class="flat-color-list width-14">
-                                        <li>
-                                            <a href="#" class="red"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="blue"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="black"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item man accessories">
-                                <div class="product-thumb clearfix">
-                                    <a href="#">
-                                        <img src="/1/images/shop/sh-4/2.jpg" alt="image">
-                                    </a>
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item kid woman">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/3.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item man accessories">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/4.jpg" alt="image">
-                                    </a>
-                                    <span class="new sale">Sale</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <del>
-                                            <span class="regular">$120.00</span>
-                                        </del>
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                    <ul class="flat-color-list width-14">
-                                        <li>
-                                            <a href="#" class="red"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="blue"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="black"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item kid woman">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/5.jpg" alt="image">
-                                    </a>
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item man accessories">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/6.jpg" alt="image">
-                                    </a>
-                                    <span class="new sale">Sale</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <del>
-                                            <span class="regular">$150.00</span>
-                                        </del>
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                    <ul class="flat-color-list width-14">
-                                        <li>
-                                            <a href="#" class="red"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="blue"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="black"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item kid woman">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/7.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                            <li class="product-item man accessories">
-                                <div class="product-thumb clearfix">
-                                    <a href="#" class="product-thumb">
-                                        <img src="/1/images/shop/sh-4/8.jpg" alt="image">
-                                    </a>
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <span class="product-title">Cotton White Underweaer Block Out Edition</span>
-                                    <div class="price">
-                                        <ins>
-                                            <span class="amount">$100.00</span>
-                                        </ins>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart text-center">
-                                    <a href="#">ADD TO CART</a>
-                                </div>
-                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+            </div>
+
+
+            <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+
+
+                <h3 class="blogtitle"><a href="/showtime/17.html" tppabs="http://showtime.yangqq.com/life/17.html" target="_blank" >或许换一个活法,能让你走出阴霾</a></h3>
+                <span class="blogpic"><a href="/showtime/17.html" tppabs="http://showtime.yangqq.com/life/17.html" title="或许换一个活法,能让你走出阴霾"><img src="/showtime/43baa4c7c03ed66bae98696de5ebc64e-1.jpg" tppabs="http://www.yangqq.com/d/file/news/life/2014-07-10/43baa4c7c03ed66bae98696de5ebc64e.jpg" alt="或许换一个活法,能让你走出阴霾"></a></span>
+
+                <p class="blogtext">前段时间回成都,去见了几年未见的老友.一起吃了饭,还带我家宝宝去玩.我问她为什么这么久都还没有打算要孩子,她说,她有一段时间患上了忧郁症,很长的时间才走出来,我听她这么说,我都很惊讶!想问问她原因,可见她欲言又止的神情,我便不再主动问她.就听着她慢慢的说.其实主要的原因还是源自于工作和家庭,工作压力大,每天的程序代码,上级不停的催,她甚至连续好几个通宵的熬夜,,,... </p>
+                <div class="bloginfo">
+                    <ul>
+                        <li class="author">故乡</li>
+                        <li class="lmname"><a href="/showtime/index-3.htm" tppabs="http://showtime.yangqq.com/life/"  target="_blank" >慢生活</a></li>
+                        <li class="timer">2018-02-26</li>
+                        <li class="view"><span>19</span>已阅读</li>
+
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END PRODUCT -->
+    </main>
+    <aside class="r_box" >
+        <div class="about_me">
+            <h2>博主简介</h2>
+            <ul>
+                <i><img src="/showtime/4.jpg" tppabs="http://showtime.yangqq.com/skin/show/images/4.jpg"></i>
+                <p><strong>故乡</strong>，一个80后草根女站长！09年入行。一直潜心研究web前端技术，一边工作一边积累经验，分享一些个人博客模板，以及SEO优化等心得。</p>
+            </ul>
+        </div>
+        <div class="wdxc">
+            <h2>
+                图文精选
+            </h2>
+            <ul>
+                <li>
+                    <a href="/showtime/25.html" tppabs="http://showtime.yangqq.com/study/biji/25.html"
+                       title="【匆匆那些年】总结个人博客经历的这四年…" target="_blank">
+                        <img src="/showtime/a465dddcbbcce5f7d73e1ea7fdc48b11.jpg" tppabs="http://showtime.yangqq.com/d/file/p/2018/08-04/a465dddcbbcce5f7d73e1ea7fdc48b11.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/showtime/27.html" tppabs="http://showtime.yangqq.com/study/biji/27.html"
+                       title="帝国cms常用标签调用方法总结（不得不收藏哦）" target="_blank">
+                        <img src="/showtime/a0b65d3d8160f90f6556c4dfa3a85a59-1.jpg" tppabs="http://www.yangqq.com/d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-    <!-- ICON BOX -->
-    <section class="flat-row row-icon-box bg-section bg-color-f5f">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="flat-icon-box icon-top style-1 clearfix text-center">
-                        <div class="inner no-margin">
-                            <div class="icon-wrap">
-                                <i class="fa fa-truck"></i>
-                            </div>
-                            <div class="text-wrap">
-                                <h5 class="heading"><a href="#">Free Shipping</a></h5>
-                                <p class="desc">Free Shipping on order over $99</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3">
-                    <div class="flat-icon-box icon-top style-1 clearfix text-center">
-                        <div class="inner">
-                            <div class="icon-wrap">
-                                <i class="fa fa-money"></i>
-                            </div>
-                            <div class="text-wrap">
-                                <h5 class="heading"><a href="#">Cash On Delivery</a></h5>
-                                <p class="desc">The Internet Trend To Repeat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3">
-                    <div class="flat-icon-box icon-top style-1 clearfix text-center">
-                        <div class="inner">
-                            <div class="icon-wrap">
-                                <i class="fa fa-gift"></i>
-                            </div>
-                            <div class="text-wrap">
-                                <h5 class="heading"><a href="#">Gift For All</a></h5>
-                                <p class="desc">Receive Gift When Subscribe</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3">
-                    <div class="flat-icon-box icon-top style-1 clearfix text-center">
-                        <div class="inner">
-                            <div class="icon-wrap">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <div class="text-wrap">
-                                <h5 class="heading"><a href="#">Opening All Week</a></h5>
-                                <p class="desc">6.00 am - 17.00pm</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-3 -->
+        <div class="tuijian">
+            <h2 id="tab">
+                <a href="/showtime/#" class="current">
+                    最新文章
+                </a>
+                <a href="/showtime/#">
+                    点击排行
+                </a>
+            </h2>
+            <div id="content">
+                <ul style="display:block;">
+                    <li>
+                        <a href="/showtime/1.html" tppabs="http://showtime.yangqq.com/study/web/1.html"
+                           title="个人博客模板《show time》蓝色版" target="_blank">
+                            个人博客模板《show time》蓝色版
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/showtime/59.html" tppabs="http://showtime.yangqq.com/about/wall/2018-08-04/59.html"
+                           title="我是怎么评价自己的？" target="_blank">
+                            我是怎么评价自己的？
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/showtime/11.html" tppabs="http://showtime.yangqq.com/life/11.html"
+                           title="我是怎么评价自己的？" target="_blank">
+                            我是怎么评价自己的？
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/showtime/66.html" tppabs="http://showtime.yangqq.com/about/wall/2018-08-04/66.html"
+                           title="抄袭门过后——丢掉心结，重拾自己" target="_blank">
+                            抄袭门过后——丢掉心结，重拾自己
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-    <!-- END ICON BOX -->
-
-    <!-- NEW LATEST -->
-    <section class="flat-row row-new-latest">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section margin-bottom-40">
-                        <h2 class="title">New Latest</h2>
-                    </div>
-                    <div class="new-latest-wrap">
-                        <div class="flat-new-latest flat-carousel-box post-wrap style3 data-effect clearfix" data-auto="false" data-column="3" data-column2="2" data-column3="1" data-gap="30" >
-                            <div class="owl-carousel owl-theme">
-                                <article class="post clearfix">
-                                    <div class="featured-post data-effect-item">
-                                        <img src="/1/images/blog/new-lastest-1-370x280.jpg" alt="image">
-                                        <div class="content-post text-center">
-                                            <div class="title-post">
-                                                <h2><a href="#">Trend Of 2018</a></h2>
-                                            </div><!-- /.title-post -->
-                                            <ul class="meta-post">
-                                                <li class="date">
-                                                    OCT 08, 2018
-                                                </li>
-                                                <li class="author">
-                                                    <a href="#">BY ADMIN</a>
-                                                </li>
-                                            </ul><!-- /.meta-post -->
-                                            <div class="entry-post">
-                                                <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
-                                                <div class="more-link">
-                                                    <a href="#">READ MORE</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.content-post -->
-                                        <div class="overlay-effect bg-overlay-black"></div>
-                                    </div>
-                                </article><!-- /.post -->
-                                <article class="post clearfix">
-                                    <div class="featured-post data-effect-item">
-                                        <img src="/1/images/blog/new-lastest-2-370x280.jpg" alt="image">
-                                        <div class="content-post text-center">
-                                            <div class="title-post">
-                                                <h2><a href="#">Trend Of 2018</a></h2>
-                                            </div><!-- /.title-post -->
-                                            <ul class="meta-post">
-                                                <li class="date">
-                                                    OCT 08, 2018
-                                                </li>
-                                                <li class="author">
-                                                    <a href="#">BY ADMIN</a>
-                                                </li>
-                                            </ul><!-- /.meta-post -->
-                                            <div class="entry-post">
-                                                <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
-                                                <div class="more-link">
-                                                    <a href="#">READ MORE</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.content-post -->
-                                        <div class="overlay-effect bg-overlay-black"></div>
-                                    </div>
-                                </article><!-- /.post -->
-                                <article class="post clearfix">
-                                    <div class="featured-post data-effect-item">
-                                        <img src="/1/images/blog/new-lastest-3-370x280.jpg" alt="image">
-                                        <div class="content-post text-center">
-                                            <div class="title-post">
-                                                <h2><a href="#">Trend Of 2018</a></h2>
-                                            </div><!-- /.title-post -->
-                                            <ul class="meta-post">
-                                                <li class="date">
-                                                    OCT 08, 2018
-                                                </li>
-                                                <li class="author">
-                                                    <a href="#">BY ADMIN</a>
-                                                </li>
-                                            </ul><!-- /.meta-post -->
-                                            <div class="entry-post">
-                                                <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
-                                                <div class="more-link">
-                                                    <a href="#">READ MORE</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.content-post -->
-                                        <div class="overlay-effect bg-overlay-black"></div>
-                                    </div>
-                                </article><!-- /.post -->
-                                <article class="post clearfix">
-                                    <div class="featured-post data-effect-item">
-                                        <img src="/1/images/blog/new-lastest-1-370x280.jpg" alt="image">
-                                        <div class="content-post text-center">
-                                            <div class="title-post">
-                                                <h2><a href="#">Trend Of 2018</a></h2>
-                                            </div><!-- /.title-post -->
-                                            <ul class="meta-post">
-                                                <li class="date">
-                                                    OCT 08, 2018
-                                                </li>
-                                                <li class="author">
-                                                    <a href="#">BY ADMIN</a>
-                                                </li>
-                                            </ul><!-- /.meta-post -->
-                                            <div class="entry-post">
-                                                <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
-                                                <div class="more-link">
-                                                    <a href="#">READ MORE</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.content-post -->
-                                        <div class="overlay-effect bg-overlay-black"></div>
-                                    </div>
-                                </article><!-- /.post -->
-                                <article class="post clearfix">
-                                    <div class="featured-post data-effect-item">
-                                        <img src="/1/images/blog/new-lastest-2-370x280.jpg" alt="image">
-                                        <div class="content-post text-center">
-                                            <div class="title-post">
-                                                <h2><a href="#">Trend Of 2018</a></h2>
-                                            </div><!-- /.title-post -->
-                                            <ul class="meta-post">
-                                                <li class="date">
-                                                    OCT 08, 2018
-                                                </li>
-                                                <li class="author">
-                                                    <a href="#">BY ADMIN</a>
-                                                </li>
-                                            </ul><!-- /.meta-post -->
-                                            <div class="entry-post">
-                                                <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
-                                                <div class="more-link">
-                                                    <a href="#">READ MORE</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.content-post -->
-                                        <div class="overlay-effect bg-overlay-black"></div>
-                                    </div>
-                                </article><!-- /.post -->
-                                <article class="post clearfix">
-                                    <div class="featured-post data-effect-item">
-                                        <img src="/1/images/blog/new-lastest-3-370x280.jpg" alt="image">
-                                        <div class="content-post text-center">
-                                            <div class="title-post">
-                                                <h2><a href="#">Trend Of 2018</a></h2>
-                                            </div><!-- /.title-post -->
-                                            <ul class="meta-post">
-                                                <li class="date">
-                                                    OCT 08, 2018
-                                                </li>
-                                                <li class="author">
-                                                    <a href="#">BY ADMIN</a>
-                                                </li>
-                                            </ul><!-- /.meta-post -->
-                                            <div class="entry-post">
-                                                <p>This is Heading the bank manager long ago won the battle for the heart of...</p>
-                                                <div class="more-link">
-                                                    <a href="#">READ MORE</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.content-post -->
-                                        <div class="overlay-effect bg-overlay-black"></div>
-                                    </div>
-                                </article><!-- /.post -->
-                            </div><!-- /.owl-carousel -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="fenlei">
+            <h2>友情链接</h2>
+            <ul>
+                <li><a href="javascript:if(confirm(%27http://www.yangqq.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yangqq.com/%27" tppabs="http://www.yangqq.com/" title="故乡个人博客" target="_blank">故乡个人博客</a></li>        </ul>
         </div>
-    </section>
-    <!-- END NEW LATEST -->
-
-    <section class="flat-row mail-chimp">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="text">
-                        <h3>Sign up for Send Newsletter</h3>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="subscribe clearfix">
-                        <form action="#" method="post" accept-charset="utf-8" id="subscribe-form">
-                            <div class="subscribe-content">
-                                <div class="input">
-                                    <input type="email" name="subscribe-email" placeholder="Your Email">
-                                </div>
-                                <div class="button">
-                                    <button type="button">SUBCRIBE</button>
-                                </div>
-                            </div>
-                        </form>
-                        <ul class="flat-social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul><!-- /.flat-social -->
-                    </div><!-- /.subscribe -->
-                </div>
-            </div>
+        <div class="guanzhu">
+            <h2>关注我 么么哒</h2>
+            <ul>
+                <img src="/showtime/wx.jpg" tppabs="http://showtime.yangqq.com/skin/show/images/wx.jpg">
+            </ul>
         </div>
-    </section><!-- /.mail-chimp -->
+    </aside>
+</article>
+@stop
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget widget-link">
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Online Store</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div><!-- /.widget -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget widget-link link-login">
-                        <ul>
-                            <li><a href="#">Login/ Register</a></li>
-                            <li><a href="#">Your Cart</a></li>
-                            <li><a href="#">Wishlist items</a></li>
-                            <li><a href="#">Your checkout</a></li>
-                        </ul>
-                    </div><!-- /.widget -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget widget-link link-faq">
-                        <ul>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Term of service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Returns</a></li>
-                        </ul>
-                    </div><!-- /.widget -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget widget-brand">
-                        <div class="logo logo-footer">
-                            <a href="/"><img src="/1/images/logo@2x.png" alt="image" width="107" height="24"></a>
-                        </div>
-                        <ul class="flat-contact">
-                            <li class="address">112 Kingdom, NA 12, New York</li>
-                            <li class="phone">+12 345 678 910</li>
-                            <li class="email">infor.deercreative@gmail.com</li>
-                        </ul><!-- /.flat-contact -->
-                    </div><!-- /.widget -->
-                </div><!-- /.col-md-3 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </footer><!-- /.footer -->
 
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="copyright text-center">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Go Top -->
-    <a class="go-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-
-</div>
-@endsection
 

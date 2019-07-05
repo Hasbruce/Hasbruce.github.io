@@ -1,0 +1,16 @@
+document.write("");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-06-27 21:43:18</span> 1111111111111</p><p class=\"fbinfo\">sadasdsaddds</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-06-27 21:42:57</span> 12312恶趣味</p><p class=\"fbinfo\">sdfsdfvsfdf</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-06-19 08:14:06</span> Alone</p><p class=\"fbinfo\">Alone</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-03-09 18:21:18</span> 张三</p><p class=\"fbinfo\">789</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-03-07 18:05:32</span> admin</p><p class=\"fbinfo\">3232</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-02-19 17:57:35</span> 222</p><p class=\"fbinfo\">大叔大婶</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-02-15 02:44:15</span> 方法</p><p class=\"fbinfo\"><img src=\'9.gif\'/*tpa=http://showtime.yangqq.com/e/data/face/9.gif*/ border=0></p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-02-15 02:43:03</span> 匿名</p><p class=\"fbinfo\"><img src=\'7.gif\'/*tpa=http://showtime.yangqq.com/e/data/face/7.gif*/ border=0><img src=\'8.gif\'/*tpa=http://showtime.yangqq.com/e/data/face/8.gif*/ border=0></p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2019-01-02 15:31:01</span> sss</p><p class=\"fbinfo\">12121</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2018-12-23 22:40:14</span> 不错</p><p class=\"fbinfo\">666</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2018-12-15 05:48:57</span> sfsfs</p><p class=\"fbinfo\"><div class=\"ecomment\"><span class=\"ecommentauthor\">网友 Scepters_ 的原文：</span><p class=\"ecommenttext\">123</p></div>dsadsads</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2018-12-15 05:14:12</span> tucsc</p><p class=\"fbinfo\">dsadsfdsf</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2018-12-15 04:18:09</span> Scepters_</p><p class=\"fbinfo\">123</p></ul></div>");
+document.write(" <div class=\"fb\"><ul><p class=\"fbtime\"><span>2018-08-04 18:35:56</span> dancesmile</p><p class=\"fbinfo\">我从小到大被大人骂的次数很少，脸皮薄，所以当一受到批评，就玻璃心，哭鼻子。记得我初中写作文，没有话题可写，于是我照搬了一篇作文，恰巧这篇作文被老师看到过，于是，我被全班通报批评。颜面扫地，哭鼻子也没有用。</p></ul></div>");
+document.write("");

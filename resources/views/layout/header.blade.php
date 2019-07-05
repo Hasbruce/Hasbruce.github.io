@@ -1,36 +1,24 @@
-@extends('layout.footer') <!-- 公共尾部代码 -->
-
-<!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<!doctype html>
+<html>
 <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title></title>
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="/1/stylesheets/bootstrap.css" >
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="/1/stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="/1/stylesheets/responsive.css">
-
-    <!-- Colors -->
-    <link rel="stylesheet" type="text/css" href="/1/stylesheets/colors/color1.css">
-
-    <!-- Animation Style -->
-    <link rel="stylesheet" type="text/css" href="/1/stylesheets/animate.css">
-
+    <meta charset="gbk">
+    <title>故乡个人博客模板《showtime》</title>
+    <meta name="keywords" content="个人博客模板,showtime" />
+    <meta name="description" content="个人博客模板《show time》蓝色版，出自前端设计师，杨青的作品。这是一个展示自我的一个博客平台，首页有幻灯，有图文，有tab栏目切换，多样式的调用，图片，文字结合这样一点也不单调." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="showtime/base.css"  rel="stylesheet">
+    <link href="/showtime/index.css"  rel="stylesheet">
+    <link href="/showtime/m.css"  rel="stylesheet">
+    <script src="/showtime/jquery.min.js"  ></script>
+    <script src="/showtime/jquery.easyfader.min.js" ></script>
+    <script src="/showtime/hc-sticky.js" ></script>
+    <script src="/showtime/comm.js"></script>
+    <script src="/showtime/scrollReveal.js" ></script>
     <!--[if lt IE 9]>
-    <script src="/1/javascript/html5shiv.js"></script>
-    <script src="/1/javascript/respond.min.js"></script>
+    <script src="/showtime/modernizr.js"></script>
     <![endif]-->
 </head>
-<body class="header_sticky header-style-1 has-menu-extra">
+<body>
 
 <!-- 公共头部代码 -->
 
