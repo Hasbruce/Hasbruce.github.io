@@ -86,10 +86,10 @@ class IndexController extends Controller
     }
 
     //个人信息
-    public function perInfo()
+    public function info()
     {
         $name="故乡";
-        return view('home.perInfo',compact('name'));
+        return view('home.info',compact('name'));
     }
 
     //写博客
@@ -99,18 +99,18 @@ class IndexController extends Controller
         return view('home.writeBlog',compact('name'));
     }
 
-    //模板分享
-    public function share()
-    {
-        $name="故乡";
-        return view('home.share',compact('name'));
-    }
-
-    //博客日记
+    //图片集锦
     public function list()
     {
         $name="故乡";
         return view('home.list',compact('name'));
+    }
+
+    //慢生活
+    public function slowlife()
+    {
+        $name="故乡";
+        return view('home.slowlife',compact('name'));
     }
 
     //学无止境
@@ -125,5 +125,12 @@ class IndexController extends Controller
     {
         $name="故乡";
         return view('home.time',compact('name'));
+    }
+
+    //留言
+    public function message()
+    {
+        $name="故乡";
+        return view('home.message',compact('name'));
     }
 }

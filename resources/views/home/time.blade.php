@@ -1,62 +1,48 @@
 @extends('layout.header')
 @section('content')
-<header class="header-navigation" id="header">
-    <nav>
-        <div class="logo"><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/">XXX个人博客</a></div>
-        <h2 id="mnavh"><span class="navicon"></span></h2>
-        <ul id="starlist">
-            <li><a href="/" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/index.html">首页</a></li>
-            <li><a href="/home/writeBlog" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/write-article.html">写博客</a></li>
-            <li><a href="/home/share" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/share.html">模板分享</a></li>
-            <li><a href="/home/list" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/list.html">博客日记</a></li>
-            <li class="menu"><a href="/home/fengmain" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/fengmian.html">学无止境</a>
-                <ul class="sub">
-                    <li><a href="#">慢生活</a></li>
-                    <li><a href="#">美文欣赏</a></li>
-                </ul>
-            </li>
-            <li><a href="/home/time" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/time.html">时间轴</a></li>
-
-            <li><a href="/home/perInfo" tppabs="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/about.html">关于我</a></li>
-        </ul>
-        <div class="searchbox">
-            <div id="search_bar" class="search_bar">
-                <form  id="searchform" action="http://www.17sucai.com/preview/385871/2018-09-17/bolg2/[!--news.url--]e/search/index.php" method="post" name="searchform">
-                    <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
-                    <input type="hidden" name="show" value="title" />
-                    <input type="hidden" name="tempid" value="1" />
-                    <input type="hidden" name="tbname" value="news">
-                    <input type="hidden" name="Submit" value="搜索" />
-                    <p class="search_ico"> <span></span></p>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
 <article>
     <div class="timebox">
         <ul>
-            <li><span>2018-06-17</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">安静地做一个爱设计的女子</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">个人博客，属于我的小世界！</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">个人博客，我为什么要用帝国cms？</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">第二届 优秀个人博客模板比赛参选活动</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">D设计师博客-一个热爱生活的设计师</a></i></li>
-            <li><span>2018-06-17</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">个人博客用帝国cms 自定义页面 灵动标签调用网站所有信息</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">帝国cms 栏目高级调用 高亮并且二级栏目增加样式</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">个人博客模板《绅士》后台管理</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">帝国cms 动态留言页，搜索页支持标签调用方法</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">用js实现手机导航-优化版</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">帝国cms使用灵动标签实现当前栏目高亮的方法</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">帝国cms新闻系统增加图片集，并且列表模板调用所有小图实现方法</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank"> 帝国cms 首页或者列表页 实现图文不同样式调用方法</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">别让这些闹心的套路，毁了你的网页设计</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">帝国cms自动设置标题图片选用文章第一张图片</a></i></li>
-            <li><span>2018-04-27</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">html5个人博客模板《simple》</a></i></li>
-            <li><span>2018-06-18</span><i><a href="javascript:if(confirm(%27http://www.17sucai.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/%27" tppabs="http://www.17sucai.com/" target="_blank">html5古典个人博客模板《青砖屋檐》</a></i></li>
+            <li><span>2018-06-17</span><i><a href="../" target="_blank">安静地做一个爱设计的女子</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">个人博客，属于我的小世界！</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">个人博客，我为什么要用帝国cms？</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">第二届 优秀个人博客模板比赛参选活动</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">D设计师博客-一个热爱生活的设计师</a></i></li>
+            <li><span>2018-06-17</span><i><a href="../" target="_blank">个人博客用帝国cms 自定义页面 灵动标签调用网站所有信息</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">帝国cms 栏目高级调用 高亮并且二级栏目增加样式</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">个人博客模板《绅士》后台管理</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">帝国cms 动态留言页，搜索页支持标签调用方法</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">用js实现手机导航-优化版</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">帝国cms使用灵动标签实现当前栏目高亮的方法</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">帝国cms新闻系统增加图片集，并且列表模板调用所有小图实现方法</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank"> 帝国cms 首页或者列表页 实现图文不同样式调用方法</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">别让这些闹心的套路，毁了你的网页设计</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">帝国cms自动设置标题图片选用文章第一张图片</a></i></li>
+            <li><span>2018-04-27</span><i><a href="../" target="_blank">html5个人博客模板《simple》</a></i></li>
+            <li><span>2018-06-18</span><i><a href="../" target="_blank">html5古典个人博客模板《青砖屋檐》</a></i></li>
         </ul>
     </div>
-    <div class="pagelist"><a title="Total record">&nbsp;<b>160</b> </a>&nbsp;&nbsp;&nbsp;<b>1</b>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_2.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_2.html%27" tppabs="http://www.17sucai.com/jstt/index_2.html">2</a>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_3.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_3.html%27" tppabs="http://www.17sucai.com/jstt/index_3.html">3</a>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_4.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_4.html%27" tppabs="http://www.17sucai.com/jstt/index_4.html">4</a>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_5.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_5.html%27" tppabs="http://www.17sucai.com/jstt/index_5.html">5</a>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_6.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_6.html%27" tppabs="http://www.17sucai.com/jstt/index_6.html">6</a>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_2.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_2.html%27" tppabs="http://www.17sucai.com/jstt/index_2.html">下一页</a>&nbsp;<a href="javascript:if(confirm(%27http://www.17sucai.com/jstt/index_14.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.17sucai.com/jstt/index_14.html%27" tppabs="http://www.17sucai.com/jstt/index_14.html">尾页</a></div>
+    <div class="pagelist">
+        <a title="Total record">
+            &nbsp;
+            <b>
+                160
+            </b>
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <b>
+            1
+        </b>
+        &nbsp;
+        <a href="../">
+            2
+        </a>
+        &nbsp;
+        <a href="../">
+            3
+        </a>
+    </div>
 </article>
 
 @stop
